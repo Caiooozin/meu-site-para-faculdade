@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tech Blog Moderno</title>
   <style>
-    /* Reset */
     * {
       margin: 0;
       padding: 0;
@@ -19,10 +18,9 @@
       display: flex;
       flex-direction: column;
       min-height: 100vh;
-      transition: background-color 0.4s, color 0.4s; /* Adicionado para transição suave */
+      transition: background-color 0.4s, color 0.4s;
     }
 
-    /* Estilos do Modo Escuro */
     body.dark-mode {
       background: #121212;
       color: #e0e0e0;
@@ -38,13 +36,10 @@
     }
 
     body.dark-mode .download-section {
-        background: #2c2c2c;
+      background: #2c2c2c;
     }
 
-    /* --- FIM DO MODO ESCURO --- */
-
-
-    /* [NOVO] Estilo do Banner */
+    /* Banner */
     #promo-banner {
       background: #ffeb3b;
       color: #333;
@@ -66,8 +61,6 @@
       cursor: pointer;
       margin-left: 20px;
     }
-    /* --- FIM DO BANNER --- */
-
 
     header {
       background: linear-gradient(135deg, #6a11cb, #2575fc);
@@ -80,11 +73,6 @@
     header h1 {
       font-size: 3rem;
       margin-bottom: 10px;
-    }
-
-    header p {
-      font-size: 1.2rem;
-      opacity: 0.9;
     }
 
     nav {
@@ -112,17 +100,13 @@
       background: white;
       border-radius: 12px;
       box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-      transition: background-color 0.4s; /* Adicionado para transição suave */
+      transition: background-color 0.4s;
     }
 
     main h2 {
       color: #6a11cb;
       text-align: center;
       margin-bottom: 20px;
-    }
-
-    .video-container {
-      margin: 20px 0;
     }
 
     iframe {
@@ -138,15 +122,10 @@
       background: #f1f1f1;
       border-radius: 10px;
       text-align: center;
-       transition: background-color 0.4s; /* Adicionado para transição suave */
+      transition: background-color 0.4s;
     }
 
-    .download-section h3 {
-      margin-bottom: 15px;
-      color: #2575fc;
-    }
-
-    .btn { /* [MODIFICADO] Classe genérica para botões */
+    .btn {
       display: inline-block;
       color: white;
       padding: 12px 25px;
@@ -154,12 +133,12 @@
       text-decoration: none;
       font-size: 1.1em;
       transition: 0.3s;
-      border: none; /* Adicionado para botões */
-      cursor: pointer; /* Adicionado para botões */
+      border: none;
+      cursor: pointer;
     }
     
-    .download-btn { /* Estilo específico do botão de download */
-        background: #6a11cb;
+    .download-btn {
+      background: #6a11cb;
     }
 
     .download-btn:hover {
@@ -167,17 +146,15 @@
       transform: scale(1.05);
     }
 
-    /* [NOVO] Estilo do novo botão de ação */
     .action-btn {
-        background: #28a745; /* Verde */
-        margin-top: 20px;
+      background: #28a745;
+      margin-top: 20px;
     }
 
     .action-btn:hover {
-        background: #218838;
-        transform: scale(1.05);
+      background: #218838;
+      transform: scale(1.05);
     }
-
 
     footer {
       background: #343a40;
@@ -196,84 +173,85 @@
   <button id="close-banner-btn">&times;</button>
 </div>
 
+<header>
+  <h1>Tech Blog</h1>
+  <p>Novidades, tutoriais e downloads exclusivos</p>
+</header>
 
-  <header>
-    <h1>Tech Blog</h1>
-    <p>Novidades, tutoriais e downloads exclusivos</p>
-  </header>
+<nav>
+  <a href="#">Home</a>
+  <a href="#">Tutoriais</a>
+  <a href="#">Reviews</a>
+  <a href="#">Downloads</a>
+  <a href="#">Contato</a>
+</nav>
 
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">Tutoriais</a>
-    <a href="#">Reviews</a>
-    <a href="#">Downloads</a>
-    <a href="#">Contato</a>
-  </nav>
+<main>
+  <h2>Como criar seu primeiro site moderno</h2>
 
-  <main>
-    <h2>Como criar seu primeiro site moderno</h2>
-    <p>Aprenda passo a passo como construir um site moderno usando HTML, CSS e integração com vídeos do YouTube.</p>
+  <!-- IMAGEM DE HTML FUTURISTA -->
+  <div style="text-align: center; margin: 25px 0;">
+    <img 
+      src="https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png"
+      alt="Logo HTML5"
+      style="
+        width: 180px;
+        border-radius: 18px;
+        padding: 10px;
+        background: rgba(0, 255, 255, 0.08);
+        border: 2px solid #00eaff;
+        box-shadow: 0 0 15px #00eaff;
+        transition: 0.35s ease;
+        cursor: pointer;
+      "
+      onmouseover="this.style.transform='scale(1.07)'; this.style.boxShadow='0 0 25px #00eaff';"
+      onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 15px #00eaff';"
+    >
+  </div>
 
-    <div class="video-container">
-      <iframe <iframe width="560" height="315" src="https://www.youtube.com/embed/5Hn58p-hYC0?si=h7Xy4EqK_n3N-DuG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      
-      
-    </div>
+  <p>Aprenda passo a passo como construir um site moderno usando HTML, CSS e integração com vídeos do YouTube.</p>
 
-    <p>Continue acompanhando nosso blog para mais dicas e tutoriais de tecnologia!</p>
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/5Hn58p-hYC0?si=h7Xy4EqK_n3N-DuG" allowfullscreen></iframe>
+  </div>
 
-    <div style="text-align: center;">
-      <button id="theme-toggle-btn" class="btn action-btn">Ativar Modo Escuro</button>
-    </div>
+  <div style="text-align: center;">
+    <button id="theme-toggle-btn" class="btn action-btn">Ativar Modo Escuro</button>
+  </div>
 
+  <div class="download-section">
+    <h3>📥 Baixe nosso PDF exclusivo</h3>
+    <p>Clique no botão abaixo para baixar um guia em PDF com dicas de tecnologia.</p>
+    <a href="meu-arquivo.pdf" download class="btn download-btn">Baixar PDF</a>
+  </div>
+</main>
 
-    <div class="download-section">
-      <h3>📥 Baixe nosso PDF exclusivo</h3>
-      <p>Clique no botão abaixo para baixar um guia em PDF com dicas de tecnologia.</p>
-      <a href="meu-arquivo.pdf" download class="btn download-btn">Baixar PDF</a>
-    </div>
-  </main>
-
-  <footer>
-    <p>© 2025 Tech Blog. Todos os direitos reservados.</p>
-  </footer>
+<footer>
+  <p>© 2025 Tech Blog. Todos os direitos reservados.</p>
+</footer>
 
 <script>
-  // --- Lógica para o Banner ---
-  // Pega o elemento do banner pelo seu ID
   const banner = document.getElementById('promo-banner');
-  // Pega o botão de fechar pelo seu ID
   const closeBannerBtn = document.getElementById('close-banner-btn');
 
-  // Adiciona um "escutador" que espera por um clique no botão de fechar
   closeBannerBtn.addEventListener('click', function() {
-    // Quando o botão for clicado, esconde o banner
     banner.style.display = 'none';
   });
 
-
-  // --- Lógica para o Botão de Modo Escuro ---
-  // Pega o botão que vai trocar o tema
   const themeToggleBtn = document.getElementById('theme-toggle-btn');
-  
-  // Pega o corpo (body) do documento
   const body = document.body;
 
-  // Adiciona um "escutador" que espera por um clique no botão de tema
   themeToggleBtn.addEventListener('click', function() {
-    // A mágica acontece aqui: `toggle` adiciona a classe se ela não existir,
-    // e remove se ela já existir.
     body.classList.toggle('dark-mode');
 
-    // Verifica se o modo escuro está ativo para mudar o texto do botão
     if (body.classList.contains('dark-mode')) {
       themeToggleBtn.textContent = 'Desativar Modo Escuro';
     } else {
       themeToggleBtn.textContent = 'Ativar Modo Escuro';
     }
   });
-
 </script>
 
 </body>
 </html>
+
